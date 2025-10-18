@@ -8,10 +8,8 @@ const int PED_RED =   17;
 const int PED_GREEN = 16;
 const int BUTTON =    13;
 
-// int getTraficState(){
-//   Serial.println(digitalRead(CAR_YELLOW));
-//   return digitalRead(CAR_YELLOW);
-// }
+
+
 
 void setup()
 {
@@ -21,6 +19,10 @@ void setup()
   pinMode(CAR_GREEN, OUTPUT);
   pinMode(PED_RED, OUTPUT);
   pinMode(PED_GREEN, OUTPUT);
+
+  digitalWrite(CAR_RED, HIGH);
+  digitalWrite(CAR_YELLOW, LOW);
+  digitalWrite(CAR_GREEN, LOW);
 }
 
 void loop()
